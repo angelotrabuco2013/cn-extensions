@@ -8,7 +8,7 @@ function load(title){
 
 function copy(title) {
   url = window.location.origin
-  text = url + "/extensions/" + `${title}` + '.js' 
+  text = url + "/cn-extensions/extensions/" + `${title}` + '.js' 
   if (navigator.clipboard && navigator.clipboard.writeText) {
     navigator.clipboard.writeText(text)
       .then(() => {
